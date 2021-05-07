@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <!-- Page's title and style-links to the page-->
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header for the advanced google search page The google logo is here as it is -->
+    <header class="header-advanced">
+      <div class="header-info">
+        <img src="google.png" alt="google logo" class="header-logo">
+      </div>
+      <ul class="header-menu">
+        <li><a class="link" href="index.html">Search</a></li>
+        <li><a class="link" href="imagesgoog.html">Images</a></li>
+        <!-- href="#" will be linked to the top of the page, so that button does not go enywhere outside the page -->
+		    <li><a class = "link" href="#">CSearch50Web</a></li>
+        <li><a class="letter-icon" href="#">S</a></li>
+      </ul>
+    </header>
+    <!-- End of the header and the begining of the main advance search page -->
+    <div class="advanced-main">
+      <div class="advanced-main__heading"><h2>Advanced Search</h2></div>
+      <div class="advanced-main__body">
+        <form action="https://www.google.com.au/search">
+          <div class="advanced-main__body-form">
+            <div class="advanced-main__body-form-fields">
+              <!-- Each of the input tags will have different names and ids to pass on to the URL so the search engine knows what to return -->
+              <h4>Find pages with...</h4>
+              <div>
+                <!-- Autocomplete is off in every search box so the program does not save previuos searches -->
+                <label for="as_q">All these words:</label>
+                <input type="text" name="as_q" id="as_q" autocomplete="off"></input>
+              </div>
+              <div>
+                <label for="as_epq">This exact word or phrase:</label>
+                <input type="text" name="as_epq" id="as_epq" autocomplete="off"></input>
+              </div>
+              <div>
+                <label for="as_oq">Any of these words:</label>
+                <input type="text" name="as_oq" id="as_oq" autocomplete="off"></input>
+              </div>
+              <div>
+                <label for="as_eq">None of these words:</label>
+                <input type="text" name="as_eq" id="as_eq" autocomplete="off"></input>
+              </div>
+            </div>
+            <!-- The instructions that appear on the right of the screen to make sure the user knows how to do an advanced serach -->
+            <div class="advanced-main__body-tips">
+              <h5>To do this in the search box.</h5>
+              <p>Type the important words: tri-colour rat terrier</p>
+              <p>Put exact words in quotes: "rat terrier"</p>
+              <p>
+                Type OR between all the words you want: miniature OR standard
+              </p>
+              <p>
+                Put a minus sign just before words that you don't want: -rodent,
+                -"Jack Russell"
+              </p>
+            </div>
+          </div>
+          <!-- Blue advanced search button as asked -->
+          <button>Advanced Search</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div>Argentina</div>
+    </footer>
+  </body>
+</html>

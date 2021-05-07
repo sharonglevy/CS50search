@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Page's title and style-links to the page-->
+  <head>
+    <title>Images Search</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    ></link>
+  </head>
+  <body class="body-main">
+    <!-- Almost same header distribution as the main search one -->
+    <header>
+      <ul class="header-info">
+        <li><a class="link" href="#">About</a></li>
+        <li><a class="link" href="#">Store</a></li>
+      </ul>
+      <!-- The easteregg to CS50 is on the right this time with the links to advanced search and main search -->
+      <ul class="header-menu">
+        <li><a class="link" href="index.html">Search</a></li>
+        <li><a class="link" href="#">CSearch50Web</a></li>
+        <li><a href="#"><i class="fa fa-th"></i></a></li>
+        <li><a class="letter-icon" href="#">S</a></li>
+      </ul>
+    </header>
+    <div class="main-search">
+      <div class="neon">
+        <span class="text" data-text="CS50gle">CS50gle</span>
+        <span class="gradient"></span>
+        <span class="spotlight"></span>
+      </div>
+      <!-- This time the action form has "images?" so that the search engine knows to go to search for images -->
+      <form action="https://www.google.com/images?q">
+        <input class="form-search" type="text" name="q" autocomplete="off"></input>
+        <!-- Search icon for the main search space -->
+        <i class="fa fa-search icon-search"></i>
+        <!--  Instead of the camera icon a CS50 icon's been added -->
+        <i class="fa fa-CS50 icon-CS50">CS50</i>
+        <!-- The CS50 icon is present here too -->
+        <div class="buttons">
+          <!-- Normal search button but for the images search page has been added for being practic -->
+          <button type="submit" class="btn-search">Images Search</button>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <div>Argentina</div>
+    </footer>
+  </body>
+</html>

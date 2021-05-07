@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Page's title and style-links to the page-->
+    <title>Search</title>
+    <link rel="stylesheet" href="styles.css"></link>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"></link>
+  </head>
+  <body class="body-main">
+    <!-- header left for the main search page, an extra "button is added as an easter egg to CS50" -->
+    <header>
+      <ul class="header">
+        <li><a class="link" href="#">About</a></li>
+		    <li><a class="link" href="#">Store</a></li>
+		    <li><a class = "link" href="#">CSearch50Web</a></li>
+      </ul>
+      <!-- Header right for the main page with the links to images and advanced search as the above in form of a list -->
+      <ul class="header">
+		    <li><a class="link" href="imagesgoog.html">Images</a></li>
+        <li><a class="link" href="advancedgoog.html">Advanced search</a></li>
+        <li><a href="#"><i class="fa fa-th"></i></a></li>
+        <li><a class="letter-icon" href="#">S</a></li>
+      </ul>
+    </header>
+    <!-- The main part of the body of the page the google icon is another easteregg for CS50-->
+    <div class="main-search">
+      <!-- The google icon is a bit different to personalize the page a bit more -->
+      <div class="neon">
+        <span class="text" data-text="CS50gle">CS50gle</span>
+        <span class="gradient"></span>
+        <span class="spotlight"></span>
+      </div>
+      <!-- this is the main search form it uses q to pass the searched item to google url -->
+      <form action="https://google.com/search">
+        <input class="form-search" type="text" name="q" autocomplete="off"></input>
+        <!-- Search icon for the main search space -->
+        <i class="fa fa-search icon-search"></i>
+        <!--  Instead of the camera icon a CS50 icon's been added -->
+        <i class="fa fa-CS50 icon-CS50">CS50</i>
+        <div class="buttons">
+          <!-- Normal search button and I'm feeling lucky button -->
+          <button type="submit" class="btn-search">Google Search</button>
+          <!-- The Feeling lucky button has a name of btnI and a value of I am Feeling Lucky to pass to the url so it behaves as expected -->
+          <!-- I couldn't figure out how to bypass the redirecting notice of this button -->
+          <button class="btn-search" name="btnI" value="I am Feeling Lucky" type="submit">I'm Feeling Lucky</button>
+        </div>
+      </form>
+      <div class="lang-offer">Google offered in: <a href="#">spanish</a></div>
+    </div>
+    <!-- Footer of the page with the country of the page, in this case argentina ;) -->
+    <footer>
+      <div>Argentina</div>
+    </footer>
+  </body>
+</html>
